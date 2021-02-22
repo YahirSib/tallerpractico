@@ -1,0 +1,172 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Cuprum', sans-serif;
+
+}
+body{
+    background-color: lightblue;
+}
+nav{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(58, 38, 189);
+}
+ul a:first-child{
+    color: red;
+    text-decoration: wavy;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    height: 9vh;
+    background-color: rgb(34, 22, 112);
+}
+nav ul a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(137, 121, 242); ;
+}
+nav ul a:hover{
+    background-color:rgb(58, 38, 189);
+    padding: 2%
+}
+.box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.caja{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subox{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subox2{
+    width: 30vw;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 14em;
+    height: 12em;
+    margin: 2%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    box-shadow: 5px 3px 2px #aaaaaa;
+    padding: 0.5em;
+}
+h1{
+    font-size: 3em;
+    font-style: italic;
+    margin-top: 2%;
+}
+.card:nth-child(2n){
+    justify-content: flex-start;
+}
+
+#img1{
+    background-image: url(../img/img1.png);
+}
+#img2{
+    background-image: url(../img/img2.png);
+}
+#img3{
+    background-image: url(../img/img3.png);
+}
+#img4{
+    background-image: url(../img/img4.png);
+}
+#img5{
+    background-image: url(../img/img5.png);
+}
+#img6{
+    background-image: url(../img/img6.png);
+}
+h2{
+    background-color: rgb(34, 22, 112);
+    color: rgb(137, 121, 242);
+    border-radius: 16px;
+    padding: 0.2em 1em;
+    font-size: 1em;
+    opacity: 0.5;
+    font-family: 'Open Sans', sans-serif;
+}
+section.box div.caja article.subox div.card h2:hover{
+    opacity: 1;
+}
+
+img{
+    width: 350px;
+    height: 300px;
+    margin: 1%;
+    border-radius: 50%;
+    border: 2px solid rgb(58, 38, 189);
+}
+.subox2 p {
+    text-align: justify;
+    padding: 0.5%;
+    margin: 1%;
+}
+.subox2 p:first-letter{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.5em;
+    color: rgb(34, 22, 112) ;
+    font-style: italic;
+    margin: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    width: 100vw;
+    height: 9vh;
+    background-color: rgb(58, 38, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-size: 1em;
+}
+@media only screen and (max-width: 1125px) {
+    .subox{
+        width: 100vw;
+    }
+    .subox2{
+        width: 100vw;
+    }
+    nav ul{
+        width: 50vw;
+    }
+}
